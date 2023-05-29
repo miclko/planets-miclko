@@ -2,7 +2,18 @@ import numpy as np
 import matplotlib.pyplot as plt 
 
 def eccentricity(x,y,L,l):
+"""
+Calculation of ecentricity of the ellipsoid
 
+Args:
+  x: x position(?)
+  y: y position(?)
+  L: larger diameter
+  l: smaller diameter
+
+Returns:
+ e: eccentricity of ellipsoid
+"""
   rj=(x**2+y**2)**.5
   e=np.zeros(int(L/l), dtype=float);
   for i in range(0,int(L/l)):
